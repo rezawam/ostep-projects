@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	for (int i = 1; i < argc; i++) {
 		FILE *fp = fopen(argv[i], "r");
 		if (!fp) {
-			fprintf(stderr, "wzip: cannot open file\n");
+			printf("wzip: cannot open file\n");
 			return 1;
 		}
 
